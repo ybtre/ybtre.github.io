@@ -51,6 +51,10 @@ header h1 {
 	text-align: center;
 }
 
+body {
+    text-align: center;
+}
+
 footer {
 	text-align: center;
 	clear: both;
