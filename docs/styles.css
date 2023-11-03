@@ -1,6 +1,108 @@
-body 
-{
-    margin: 0;
-    background: darkgrey;
-    text-align: center;
+@font-face {
+	font-family: randygg;
+	src: url("fonts/bold.woff");
+}
+
+@font-face {
+	font-family: randygg-bold;
+	src: url("fonts/bold.woff");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: randygg-bold;
+}
+
+h1#title {
+	text-align: center;
+	font-size: 2em;
+}
+
+
+main {
+	max-width: 800px;
+	margin: auto
+}
+
+p.centered {
+	margin: auto;
+	text-align: center;
+}
+
+
+p.subtitle {
+	font-size: 1.2em;
+	font-family: randygg-bold;
+}
+
+img {
+	max-width: 100%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	clear: both;
+}
+
+div.pages.spaced {
+	display: flex;
+	justify-content: center;
+	gap: 25px
+}
+
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center;
+	clear: both;
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
+
+#prevart {
+	float: left;
+	text-align: left;
+}
+
+#nextart {
+	float: right;
+	text-align: right;
+}
+
+#nextart,
+#prevart {
+	max-width: 33%;
+}
+
+#wordcount,
+#date {
+	margin: 0;
+	font-family: randygg;
+}
+
+div .highlight > div {
+	overflow-x: scroll;
+}
+
+
+@media (max-width:820px) {
+	main {
+		width: 95%;
+	}
+
 }
