@@ -1,10 +1,10 @@
 @font-face {
-	font-family: randygg;
+	font-family: bold;
 	src: url("fonts/bold.woff");
 }
 
 @font-face {
-	font-family: randygg-bold;
+	font-family: bold;
 	src: url("fonts/bold.woff");
 }
 
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: randygg-bold;
+	font-family: bold;
 }
 
 h1#title {
@@ -40,7 +40,7 @@ p.centered {
 
 p.subtitle {
 	font-size: 1.2em;
-	font-family: randygg-bold;
+	font-family: bold;
 }
 
 img {
@@ -96,7 +96,7 @@ div.pages.spaced {
 #wordcount,
 #date {
 	margin: 0;
-	font-family: randygg;
+	font-family: bold;
 }
 
 div .highlight > div {
