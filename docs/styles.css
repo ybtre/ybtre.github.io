@@ -3,13 +3,14 @@
 	src: url("fonts/bold.woff");
 }
 
-@font-face {
-	font-family: bold;
-	src: url("fonts/bold.woff");
+* {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
-* {
-	box-sizing: border-box;
+title {
+	display: none;
 }
 
 h1,
@@ -21,86 +22,127 @@ h6 {
 	font-family: bold;
 }
 
-h1#title {
-	text-align: center;
-	font-size: 2em;
+body {
+	color: #596666;
+	font-family: Verdana;
+	font-size: 1rem;
+    text-align: center;
+	background-color: #171717;
 }
-
 
 main {
 	max-width: 800px;
-	margin: auto
-}
-
-p.centered {
 	margin: auto;
-	text-align: center;
-}
-
-
-p.subtitle {
-	font-size: 1.2em;
-	font-family: bold;
-}
-
-img {
-	max-width: 100%;
+	background-color: #10212b;
 }
 
 header h1 {
 	text-align: center;
+	color: #bed786;
+	font-size: 7rem;
+	margin-bottom: 2rem;
 }
 
-body {
-    text-align: center;
+article div.nav_wrapper {
+	flex-direction: row;
+}
+
+a {
+	text-decoration: none;
+}
+
+article button {
+	font-family: bold;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+	margin-bottom: 1rem;
+	background-color: #eba254;
+	border: none;
+}
+article button:hover {
+	cursor: pointer;
+	background-color: #f2c27b;
+}
+article button.sp {
+	margin-right: 0.5rem;
+}
+
+article section.about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: center;
+
+	width: 60%;
+	max-width: 100%;
+	padding: 2rem;
+	border: 0.2rem solid #eba254;
+	border-radius: 1rem;
+}
+
+section.about img {
+	width: 50%;
+	border-radius: 1rem;
+}
+
+section.about p {
+	width: 50%;
 }
 
 footer {
+	width: 60%;
+	align-self: center;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	text-align: center;
-	clear: both;
+}
+footer section.git {
+	height: 7rem;
+	align-items: end;
+	text-align: end;
+	padding-right: 1rem;
+	font-size: 0.7rem;
+}
+section p {
+	width: 11.25rem;
+	margin-top: 0;
 }
 
-div.pages.spaced {
+footer section.linked {
+	text-align: start;
+	padding-left: 1rem;
+	border-left: 0.15rem solid #bed786;
+	opacity: 0.8;
+}
+
+footer button {
 	display: flex;
-	justify-content: center;
-	gap: 25px
-}
-
-
-/* For TAGLIST.HTML */
-.taglist {
-	text-align: center;
-	clear: both;
-}
-
-/* For NEXTPREV.HTML */
-#nextprev {
-	/* The container for both the previous and next articles. */
-}
-
-#prevart {
-	float: left;
-	text-align: left;
-}
-
-#nextart {
-	float: right;
-	text-align: right;
-}
-
-#nextart,
-#prevart {
-	max-width: 33%;
-}
-
-#wordcount,
-#date {
-	margin: 0;
+	flex-direction: row;
+	align-items: center;
+	width: 6.5rem;
+	background-color: transparent;
 	font-family: bold;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+	border-color: #506e68;
+	color:  #506e68;
+}
+footer button:hover {
+	cursor: pointer;
+	background-color: #bed786;
+}
+footer button img.git_icon {
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.3rem;
+	opacity: 0.8;
 }
 
-div .highlight > div {
-	overflow-x: scroll;
+
+body main h2.page_title {
+    color: #bed786;
 }
 
 
