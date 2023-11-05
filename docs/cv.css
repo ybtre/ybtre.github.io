@@ -1,0 +1,64 @@
+@font-face {
+	font-family: bold;
+	src: url("fonts/bold.woff");
+}
+
+* {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: bold;
+}
+
+body {
+	color: #596666;
+	font-family: Verdana;
+	font-size: 1rem;
+    text-align: center;
+	background-color: #171717;
+}
+
+main {
+    min-width: 500px;
+	max-width: 800px;
+	margin: auto;
+	background-color: #10212b;
+    padding-bottom: 2rem;
+}
+body main h2.page_title {
+    color: #bed786;
+}
+
+main section.proj {
+    width: 80%;
+    align-self: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #bed786;
+}
+
+main button {
+    align-self: center;
+    width: 8rem;
+	font-family: bold;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+	margin-bottom: 1rem;
+	background-color: #eba254;
+	border: none;
+}
+main button:hover {
+	cursor: pointer;
+	background-color: #f2c27b;
+}
+a {
+	text-decoration: none;
+}
