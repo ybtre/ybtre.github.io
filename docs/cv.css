@@ -41,8 +41,6 @@ body main h2.page_title {
 /** navigation **/
 main div.nav_wrapper {
 	flex-direction: row;
-	justify-content: start;
-	margin-left: 4rem;
 }
 
 .home_icon {
