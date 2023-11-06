@@ -54,6 +54,7 @@ main button {
 	margin-bottom: 1rem;
 	background-color: #eba254;
 	border: none;
+	align-items: center;
 }
 main button:hover {
 	cursor: pointer;
