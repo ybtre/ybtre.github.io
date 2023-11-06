@@ -86,6 +86,24 @@ main article.proj {
     border: 0.2rem solid #bed786;
 }
 
+main article.proj div.heading {
+    display: flex;
+    flex-direction: row;
+    background-color: #33494c;
+    border-radius: 1rem;
+}
+div.heading h1 {
+    min-width: 64%;
+    margin: 0;
+    font-size: 3rem;
+    text-align: left;
+}
+div.heading p.contacts {
+    min-width: 11rem;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
 main button {
     align-self: center;
 	font-family: bold;
@@ -99,10 +117,6 @@ main button {
 a {
     display: inline;
 	text-decoration: none;
-}
-
-article.proj p.contacts {
-    font-size: 0.8rem;
 }
 
 article.proj h3 {
@@ -134,16 +148,21 @@ section h6, section p {
 }
 
 section h6 {
-    /* display: inline; */
+    display: inline;
     text-align: start;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 h6 span {
-    /* display: inline; */
+    display: inline;
     color: #bed786;
+    opacity: 0.5;
     margin-right: 0.2rem;
 }
+h6 span.name {
+    opacity: 1;
+}
+
 section p {
     display: inline;
     text-align: start;
