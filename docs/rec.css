@@ -33,16 +33,62 @@ main {
 	background-color: #10212b;
     padding-bottom: 2rem;
 }
+/** page title **/
 body main h2.page_title {
     color: #bed786;
 }
 
-main section.proj {
+/** navigation **/
+div.nav_wrapper {
+	flex-direction: row;
+	justify-content: start;
+	margin-left: 4rem;
+}
+
+.home_icon {
+	display: inline-block;
+	width: 1rem;
+	height: 1.2rem;
+	color: transparent;
+	background-image: url('./icons/home.svg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+button.home_btn {
+	width: 2rem;
+}
+
+div.nav_wrapper button {
+	width: inherit;
+	font-family: bold;
+	font-size: 1rem;
+	border-radius: 0.3rem;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	color: #eba254;
+	border: 0.1rem solid #eba254;
+}
+div.nav_wrapper button:hover {
+	cursor: pointer;
+	background-color: #f2c27b;
+}
+div.nav_wrapper button.sp {
+	margin-right: 0.5rem;
+}
+/* */
+
+/** article **/
+main article.proj {
     width: 80%;
     align-self: center;
     padding: 2rem;
     border-radius: 2rem;
     border: 0.2rem solid #bed786;
+}
+
+article.proj p {
+	font-size: 0.8rem;
+    text-align: left;
 }
 
 main button {
@@ -63,3 +109,4 @@ main button:hover {
 a {
 	text-decoration: none;
 }
+/* */

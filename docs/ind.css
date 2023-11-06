@@ -36,6 +36,7 @@ main {
 	background-color: #10212b;
 }
 
+/** page title **/
 header h1 {
 	text-align: center;
 	color: #bed786;
@@ -43,7 +44,8 @@ header h1 {
 	margin-bottom: 2rem;
 }
 
-article div.nav_wrapper {
+/** navigation **/
+div.nav_wrapper {
 	flex-direction: row;
 }
 
@@ -51,7 +53,7 @@ a {
 	text-decoration: none;
 }
 
-article button {
+div.nav_wrapper button {
 	font-family: bold;
 	font-size: 1rem;
 	border-radius: 0.3rem;
@@ -59,14 +61,16 @@ article button {
 	background-color: #eba254;
 	border: none;
 }
-article button:hover {
+div.nav_wrapper button:hover {
 	cursor: pointer;
 	background-color: #f2c27b;
 }
-article button.sp {
+div.nav_wrapper button.sp {
 	margin-right: 0.5rem;
 }
+/* */
 
+/** article **/
 article section.about {
 	display: flex;
 	flex-direction: row;
@@ -86,9 +90,17 @@ section.about img {
 }
 
 section.about p {
+	font-size: 0.8rem;
 	width: 50%;
 }
+/* */
 
+section p {
+	width: 11.25rem;
+	margin-top: 0;
+}
+
+/** footer **/
 footer {
 	width: 60%;
 	align-self: center;
@@ -104,10 +116,7 @@ footer section.git {
 	text-align: end;
 	padding-right: 1rem;
 	font-size: 0.7rem;
-}
-section p {
-	width: 11.25rem;
-	margin-top: 0;
+	opacity: 0.8;
 }
 
 footer section.linked {
@@ -116,6 +125,9 @@ footer section.linked {
 	border-left: 0.15rem solid #bed786;
 	opacity: 0.8;
 	font-size: 0.7rem;
+}
+section.linked p {
+	margin-bottom: 0;
 }
 
 footer button {
@@ -141,11 +153,10 @@ footer button img.git_icon {
 	opacity: 0.8;
 }
 
-
-body main h2.page_title {
-    color: #bed786;
+footer section.linked button img {
+	border-radius: 5px;
 }
-
+/* */
 
 @media (max-width:820px) {
 	main {
