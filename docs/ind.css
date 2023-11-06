@@ -36,12 +36,21 @@ main {
 	background-color: #10212b;
 }
 
+main span.egg {
+	display: block;
+	margin: 1rem 0 0 1rem;
+}
+main span.egg img {
+	width: 5rem;
+	opacity: 0.7;
+}
+
 /** page title **/
 header h1 {
 	text-align: center;
 	color: #bed786;
 	font-size: 7rem;
-	margin-bottom: 2rem;
+	margin: 2rem 0rem;
 }
 
 /** navigation **/
