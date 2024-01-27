@@ -122,6 +122,11 @@ main button {
 	align-items: center;
 }
 
+main button:not(.sp) {
+    width: min-content;
+    min-width: 15rem;
+}
+
 a {
     display: inline;
 	text-decoration: none;
@@ -149,6 +154,7 @@ div.job_title button.time {
     border: 0.1rem solid #eba254;
     color: #eba254;
     font-size: 0.8rem;
+    min-width: 9rem;
 }
 
 section h6, section p {
@@ -194,3 +200,20 @@ section p a {
     color: #88a59f;
 }
 /* */
+
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+    section div.job_title {
+        flex-direction: column;
+        align-self: start;
+    }
+    div.job_title button.time {
+        margin: 0.5rem 0 0 0;
+    }
+}
+
+title {
+	display: none;
+}
